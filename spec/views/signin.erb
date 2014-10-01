@@ -1,0 +1,11 @@
+<div align="center">
+	<h1>Log In And Play!</h1>
+  <% if flash[:alert] %>
+    Alert: <%= flash[:alert] %><br/>
+  <% end %>
+	<form action="/signin" method="post">
+		<input type='text' name='username' placeholder='Username'><br/>
+		<input type='text' name='password' placeholder='Password'><br/>
+		<input type='submit' value='Submit'>
+	</form>
+</div>
